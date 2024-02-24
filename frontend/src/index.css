@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background:url("/abstract-background-of-four-colored-triangles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #555;
+}
+::-webkit-scrollbar-thumb{
+    background: #121212;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #242424;
+}
+
