@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSocketContext } from '../context/SocketContext';
 import useConversation from '../zustand/useConversation';
-import notificationSound from '../assets/sounds/WCSC5KW-message-notification.mp3'
+import notificationSound from '../assets/sounds/iphone_14_notification.mp3'
 
 
 const useListenMessage = () => {

@@ -44,6 +44,10 @@ function handleInputErrors({fullName,username,password,confirmPassword,gender}){
         toast.error("Please fill all the fields");
         return false;
     }
+    if (/\s/.test(username)) {
+        toast.error('Whitespace is not allowed in username');
+        return false;
+    }
 
     if(password!== confirmPassword){
         toast.error("Passwords don't match");

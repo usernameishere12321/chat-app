@@ -5,6 +5,10 @@ import generateTokenAndSetCookie from "../utils/generateToken.js";
 export const signup = async (req,res) => {
     try {
         const {fullName,username,password,confirmPassword,gender} = req.body;
+        if (/\s/.test(username)) {
+            return res.status(400).json({"error":"Whitespace is not allowed in username"});
+        };
+
         if(password !== confirmPassword){
             return res.status(400).json({"error":"Passoword doesn't match"});
         };
